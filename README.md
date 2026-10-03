@@ -93,7 +93,7 @@ To enable live Google Gemini foundation model analysis:
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
-GEMINI_MODEL=gemini-2.5-flash
+GEMINI_MODEL=gemini-3.8-flash
 ```
 
 2. When configured, clicking **"Analyze with Gemini"** on any incident detail page will generate real-time AI incident summaries, technical explanations, and remediation steps directly from Gemini.
