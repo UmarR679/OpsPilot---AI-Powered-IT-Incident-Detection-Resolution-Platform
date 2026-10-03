@@ -1,0 +1,25 @@
+timestamp,level,service,source,message
+2026-10-02 10:00:01,INFO,auth-service,auth.py,User authentication successful for user_id=4021
+2026-10-02 10:00:15,INFO,payment-gateway,billing.py,Processed transaction tx_99411 safely
+2026-10-02 10:01:05,WARN,db-cluster-primary,postgres.c,High number of active connections: 82/100
+2026-10-02 10:01:45,ERROR,db-cluster-primary,db_pool.py,Database connection pool exhausted! Failed to acquire connection within 5000ms
+2026-10-02 10:01:50,CRITICAL,db-cluster-primary,db_pool.py,Deadlock detected while executing query: SELECT * FROM transactions FOR UPDATE
+2026-10-02 10:02:10,INFO,web-api,server.js,HTTP GET /api/v1/health 200 OK - 12ms
+2026-10-02 10:03:00,WARN,app-worker-1,worker.py,Memory usage high: 88% allocated (3.5GB / 4.0GB)
+2026-10-02 10:03:22,CRITICAL,app-worker-1,worker.py,java.lang.OutOfMemoryError: Java heap space. RAM allocation failed for worker task #104
+2026-10-02 10:03:25,ERROR,app-worker-1,worker.py,Worker process crashed due to OOM kill by Linux kernel
+2026-10-02 10:04:10,INFO,frontend-gateway,nginx.conf,192.168.1.45 - GET /index.html 200 452
+2026-10-02 10:05:00,WARN,node-exporter,cpu_monitor.py,CPU utilization warning: 89% CPU usage on core 0-3
+2026-10-02 10:05:30,CRITICAL,node-exporter,cpu_monitor.py,CPU utilization > 95% sustained for 300 seconds. Process thread limit exceeded!
+2026-10-02 10:05:35,ERROR,analytics-service,analytics.py,High CPU usage causing response latency spikes: 4500ms
+2026-10-02 10:06:15,INFO,storage-node-2,disk.py,Disk usage check complete. /var/log volume at 65% capacity
+2026-10-02 10:07:00,WARN,storage-node-2,disk.py,Disk space threshold exceeded on /data/db: 92% full
+2026-10-02 10:07:30,CRITICAL,storage-node-2,disk.py,No space left on device! Failed to write write-ahead log to /data/db/wal_0012
+2026-10-02 10:07:35,ERROR,storage-node-2,disk.py,Disk I/O latency high: 1200ms read/write wait queue depth 48
+2026-10-02 10:08:00,INFO,gateway-proxy,router.go,Routed request to /orders via internal network
+2026-10-02 10:08:40,WARN,gateway-proxy,router.go,Packet loss detected on eth0 interface: 5.2% drop rate
+2026-10-02 10:09:10,CRITICAL,gateway-proxy,router.go,Socket timeout! Network connection refused by upstream gateway 10.0.4.12:8080
+2026-10-02 10:09:15,ERROR,gateway-proxy,router.go,Network connection timed out after 30000ms. DNS resolution failed for api.internal
+2026-10-02 10:10:00,INFO,user-service,user_controller.py,User profile updated successfully
+2026-10-02 10:10:30,ERROR,checkout-service,checkout.py,Unhandled HTTP 500 Exception: NullPointerException at CheckoutService.java:142
+2026-10-02 10:10:45,CRITICAL,checkout-service,checkout.py,Application crashed with unexpected exception: Failed to render payment view
